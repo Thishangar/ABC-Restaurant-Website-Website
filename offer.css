@@ -1,0 +1,68 @@
+.offers {
+  padding: 20px;
+  text-align: center;
+}
+
+.offers h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.offers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offer {
+  width: 30%; /* Adjust this width as needed */
+  margin: 15px;
+  text-align: center;
+  border-radius: 15px 0px 15px 0px;
+  background-color: rgba(255, 239, 213, 0.79);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.offer img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 0px 15px 0px;
+}
+
+.offer h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.offer p {
+  font-size: 1em;
+  color: #666;
+}
+
+footer {
+  background-color: #333; 
+  color: white; 
+  padding: 20px 0; 
+  text-align: center; 
+  font-size: 1em; 
+}
+
+.footer-bottom {
+  background-color: #0A162D; 
+  color: #ccc; 
+  padding: 10px 0; 
+  font-size: 0.9em; 
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+footer a {
+  color: #ffcc00; 
+  text-decoration: none; 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
