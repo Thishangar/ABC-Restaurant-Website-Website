@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Staff Registration Page </title>
+<style>  
+
+	 body {
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+		
+button {   
+       background-color: #17be46;   
+       width: 35%;  
+       color: white;   
+       padding: 15px;   
+       margin: 13px 100px;   
+       border: none;   
+       cursor: pointer;   
+       }   
+form {   
+    background-color: #6495ed;
+        border: 3px solid #f1f1f1;   
+		height: 100%;
+		width: 35%;
+     }   
+input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px black;   
+        box-sizing: border-box;   
+    }  
+button:hover {   
+        opacity: 0.7;   
+    }   
+.container {  
+        width: 89.5%; 
+		height: 87%;
+        padding: 25px;   
+    }  
+.form-center {
+        display: flex;
+		justify-content: center;
+}
+ 
+</style>  
+</head>  
+<body background="pexels-photo-1707957.webp">  
+<center>  <h1> <font color="white"> Staff Detele Form </font> </h1> </center>
+<div class="form-center">
+<form method="post" action="staffdelete.php">      
+  <div class="container"> 
+  <label> Staff NO </label>   
+<input type="text"  name="noh" placeholder= "Staff NO" required />   
+ <center>  <button type="submit" class="registerbtn">Delete</button>  </center>
+
+</form>  
+</div>
+</body>  
+</html>  
