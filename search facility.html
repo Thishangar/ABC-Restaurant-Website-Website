@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Facility</title>
+    <style>
+      .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px 15px 15px 15px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto; 
+    margin-top: 50px; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffbd04;
+    color: white;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffbd04;
+}
+
+    </style>
+</head>
+<body background="contact.jpg">
+    <div class="container">
+        <h2>Search Facility</h2>
+        <form action="searchfacility.php" method="GET">
+            <div class="form-group">
+                <label for="search">Enter Facility Name or ID:</label>
+                <input type="text" id="search" name="query" placeholder="Search..." required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
