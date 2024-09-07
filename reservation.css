@@ -1,0 +1,47 @@
+
+/* Basic styling */
+body {
+  background-image: url('contact.jpg');
+  background-size: cover;
+}
+
+
+.reservation {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(255, 239, 213, 0.79);
+  text-align: center;
+}
+
+.reservation h2 {
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffbd04;
+  border-radius: 4px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffbd04;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffbd04;
+}
