@@ -1,0 +1,159 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+	<link rel="stylesheet" href="main.css">
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <style>
+    body {
+    background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+		
+button {   
+       background-color: #ffbd04;   
+       width: 35%;  
+       color: white;   
+       padding: 15px;   
+       margin: 13px 100px;   
+       border: none;   
+       cursor: pointer;   
+       }   
+form {   
+        border: 5px solid black; 
+		height: 100%;
+		width: 40%;
+     }   
+input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px black;   
+        box-sizing: border-box;   
+    }  
+button:hover {   
+        opacity: 0.7;   
+    }   
+.container {  
+        width: 100%; 
+		height: 100%;
+        padding: 28px;
+        background-color: rgba(255, 239, 213, 0.79) !important;     
+    }  
+.form-center {
+        display: flex;
+		justify-content: center;
+}
+  </style>
+	  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> customer Registration Page </title>  
+</head>  
+<body background="contact.jpg">
+	<header>
+        <nav id="navbar">
+            
+                <h1 class="logo">
+                  <img src="Favicon.png" style="width: 40px; height: auto; vertical-align: middle;">
+                  <a href="index.html"><span class="text-primary2">ABC</span>Restaurant</a></h1>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="offer.html">Offer</a></li>
+                  <li><a href="facility.html">facility</a></li>
+                  
+					
+                </ul>
+
+            </div>
+            
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>	  
+<center><h1> <font color="white"> customer Registration Form </font> </h1> </center>
+<div class="form-center">
+<form method="post" action="customerregistation.php">      
+  <div class="container"> 
+  <label> Firstname </label>   
+<input type="text" name="firstnameh" placeholder= "Firstname" size="30" required />   
+<label> Lastname  </label>    
+<input type="text" name="lastnameh" placeholder="Lastname" size="40" required />   
+<div>  
+<br>
+<label for="district">District</label> 
+				<select name="districth" id="rooms">
+        <option value="Colombo">Colombo</option>
+        <option value="Gampaha">Gampaha</option>
+        <option value="Kalutara">Kalutara</option>
+        <option value="Kandy">Kandy</option>
+        <option value="Matale">Matale</option>
+        <option value="Nuwara Eliya">Nuwara Eliya</option>
+		<option value="Galle">Galle</option>
+		<option value="Matara">Matara</option>
+		<option value="Hambantota">Hambantota</option>
+		<option value="Jaffna">Jaffna</option>
+		<option value="Kilinochchi">Kilinochchi</option>
+		<option value=" Mannar"> Mannar</option>
+		<option value="Vavuniya">Vavuniya</option>
+		<option value="Mullaitivu">Mullaitivu</option>
+		<option value="Batticaloa">Batticaloa</option>
+		<option value="Ampara">Ampara</option>
+		<option value="Trincomalee">Trincomalee</option>
+		<option value="Kurunegala">Kurunegala</option>
+		<option value="Puttalam">Puttalam</option>
+		<option value="Anuradhapura">Anuradhapura</option>
+		<option value=" Polonnaruwa"> Polonnaruwa</option>
+		<option value="Badulla">Badulla</option>
+		<option value="Moneragala">Moneragala</option>
+		<option value="Ratnapura">Ratnapura</option>
+		<option value="Kegalle">Kegalle</option>
+    </select> 
+</div> 
+<br>  
+<div>  
+<label>   
+Gender   
+</label><br>  
+<input type="radio" value="Male" name="genderh" checked > Male   
+<input type="radio" value="Female" name="genderh"> Female     
+</div>  <br>
+<div>
+<label>   
+Phone 
+</label>  
+<input type="text" name="phonenoh" placeholder="Phone NO" size="15" required> 
+</div>
+<div>  
+<br>
+<label>   
+Date Of Birth   
+</label>  
+<input type="date" name="dateofbirthh" placeholder="Date Of Birth"   size="15" required>  
+</div> 
+<br>
+Current Address <br> 
+<textarea name="addressh" cols="40" rows="5" placeholder="Current Address"  required>  
+</textarea>  
+<br>
+<br>
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="emailh" required>
+
+ 
+    <label for="password"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="passwordh" required>  
+  
+    <label for="password-repeat"><b>Re-type Password </font> </b></label>  
+    <input type="password" placeholder="Re-type Password" name="repasswordh" required>  
+  <center>  <button type="submit" class="registerbtn">Register</button>  </center>
+
+</form>  
+</div>
+</body>  
+</html>  
