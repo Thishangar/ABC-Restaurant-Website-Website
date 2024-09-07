@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <body background="contact.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Restaurant - Contact</title>
+  <style>
+	
+        body {
+            background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.abox {
+  margin: auto;
+  width: 500px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.well {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ffbd04;
+  border: none;
+  border-radius: 4px;
+}
+
+#click_here {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+}
+
+		</style>
+</head>
+
+<div class="abox">
+  <div class="class">
+  <center><h1> Admin/staff </h1></center>
+
+
+</div>
+<div class="well">
+            <h2><center> Delete   Query </center> </h2>
+            <hr>
+            <form method="post" action="deletequery.php">
+              
+                <div class="form-group">
+                    <label for="name">Query no:</label>
+                    <input type="text" class="form-control" name="no" placeholder="Query no" required>
+                </div> 
+				 
+				<center>
+                <button type="submit" class="btn btn-lg btn-primary button" name="submit">Delete</button>
+				
+               <br>
+                <div id="click_here">
+                    <a href="admin panal.html"><center> Back to Admin Panel </center></a>
+                </div>
+            </form>
+        </div>       
+        </div>
+		</div>
+		</div>
+    </div>  
+</html>
+
