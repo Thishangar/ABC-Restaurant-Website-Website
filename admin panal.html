@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Restaurant - Admin Panel</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E3E3E3;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h3 {
+            color: #4A4A4A;
+        }
+
+        .container {
+            display: flex;
+        }
+
+
+        .sidebar {
+            background-color: #394a48;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px 20px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #5a6f6c;
+        }
+
+        .dropdown-content {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .dropdown-content li a {
+            font-size: 16px;
+        }
+
+        .dropdown-content li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header .logout {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .header .logout:hover {
+            background-color: #c9302c;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h3 {
+            margin-top: 0;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        .section ul li a {
+            color: #337ab7;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #394a48;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .card .number {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card .label {
+            font-size: 18px;
+        }
+
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+
+            <li>
+                <a href="#" onclick="toggleDropdown('staffDropdown')">Manage Staff</a>
+                <ul id="staffDropdown" class="dropdown-content">
+                    <li><a class="atext" href="staffregistation.html">&nbsp; Add Staff</a></li>
+                    <li><a class="atext" href="update.html">&nbsp; Update Staff</a></li>
+                    <li><a class="atext" href="staffdelete.html">&nbsp; Delete Staff</a></li>
+                    <li><a class="atext" href="staffsearch.html">&nbsp; Search Staff</a></li>
+                    <li><a class="atext" href="viewstaff.php">&nbsp; View Staff</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" onclick="toggleDropdown('reservationDropdown')">Manage Reservation</a>
+                <ul id="reservationDropdown" class="dropdown-content">
+                    <li><a href="resevation.html">Add Reservation</a></li>
+                    <li><a href="updatereservation.html">Update Reservation</a></li>
+                    <li><a href="deletereservation.html">Delete Reservation</a></li>
+                    <li><a href="searchreservation.html">Search Reservation</a></li>
+                    <li><a href="viewsearch.php">View Reservation</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#" onclick="toggleDropdown('facilityDropdown')">Manage Facility</a>
+                <ul id="facilityDropdown" class="dropdown-content">
+                    <li><a href="add facility.html">Add Facility</a></li>
+                    <li><a href="update facility.html">Update Facility</a></li>
+                    <li><a href="delete facility.html">Delete Facility</a></li>
+                    <li><a href="search facility.html">Search Facility</a></li>
+                    <li><a href="viewfacility.php">View Facility</a></li>
+                </ul>
+            </li>
+
+  
+            <li>
+                <a href="#" onclick="toggleDropdown('serviceDropdown')">Manage service</a>
+                <ul id="serviceDropdown" class="dropdown-content">
+                    <li><a href="addservice.html">Add service</a></li>
+                    <li><a href="updateservice.html">Update service</a></li>
+                    <li><a href="deleteservice.html">Delete service</a></li>
+                    <li><a href="searchservice.html">Search service</a></li>
+                    <li><a href="viewservice.php">View service</a></li>
+                </ul>
+            </li>
+
+     
+            <li>
+                <a href="#" onclick="toggleDropdown('queryDropdown')">Manage Query</a>
+                <ul id="queryDropdown" class="dropdown-content">
+                    <li><a href="delete query.html">Delete Query</a></li>
+                    <li><a href="search query.html">Search Query</a></li>
+                    <li><a href="viewquery.php">View Query</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+            <a href="Admin.html" class="logout">Logout</a>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="number">5</div>
+                <div class="label">New Reservations</div>
+            </div>
+            <div class="card" style="background-color: #5cb85c;">
+                <div class="number">3</div>
+                <div class="label">Pending Queries</div>
+            </div>
+            <div class="card" style="background-color: #5bc0de;">
+                <div class="number">7</div>
+                <div class="label">Facility Updates</div>
+            </div>
+            <div class="card" style="background-color: #d9534f;">
+                <div class="number">2</div>
+                <div class="label">Announcements</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            var displayStyle = dropdown.style.display;
+
+  
+            var dropdowns = document.getElementsByClassName('dropdown-content');
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].style.display = 'none';
+            }
+
+    
+            dropdown.style.display = displayStyle === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
