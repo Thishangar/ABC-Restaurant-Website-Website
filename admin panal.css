@@ -1,0 +1,82 @@
+
+body{
+  background-size: cover;
+}
+.btn {
+  float: right;
+  padding: 13px 20px;
+  
+  font-size: 18px;
+  background:#44ff00 ;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+border-radius:20px;
+}
+
+ 
+.admin-panel {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.admin-panel h2 {
+  margin-bottom: 20px;
+}
+
+.admin-panel p {
+  margin-bottom: 20px;
+}
+
+.admin-panel ul {
+  list-style: none;
+}
+
+.admin-panel ul li {
+  margin-bottom: 10px;
+}
+
+.admin-panel ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.admin-panel ul li a:hover {
+  background-color: #ffffff;
+}
+
+.abox{
+  background-color: rgba(0, 0, 0, 0.868);
+  width: 100%;
+  height: 100px;
+  color: #ffffff;
+  font-size: 30px;
+  border-color: aquamarine;
+}
+
+.abox1{
+  background-color: rgba(0, 0, 0, 0.868);
+  margin-top: 10%;
+  margin-left: 400px;
+  width: 50%;
+  height: 300px;
+  color: #ffffff;
+  font-size: 30px;
+  border-color: aquamarine;
+}
+
+.atext{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
