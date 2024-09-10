@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Attempt to delete the reservation
     if ($reservation->deleteReservation($reservation_id)) {
-        echo "<script>alert('Reservation deleted successfully.'); window.location.href='admin panal.html';</script>";
+        echo "<script>alert('Reservation deleted successfully.'); window.location.href='index.html';</script>";
     } else {
         echo "<script>alert('Reservation not found or deletion failed.'); window.location.href='deletereservation.html';</script>";
     }
